@@ -189,12 +189,6 @@ Surveillance du service **Zabbix Server** pour vérifier son bon fonctionnement.
 
 ![](screenshots/Vérification%20zabbix%20.png)
 
-### Net-SNMP Installation on pfSense
-
-Installation du package **Net-SNMP** sur le pare-feu pfSense afin d'activer la supervision via le protocole SNMP.
-
-![](screenshots/pfsense-net-snmp-installation.png)
-
 ---
 
 ### SNMP Configuration on pfSense
