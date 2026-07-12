@@ -53,20 +53,19 @@ The project includes:
 
 ### Automatic CPU Script
 
-![](screenshots/Création%20d'un%20script%20de%20correction%20automatique%20du%20CPU%20dans%20Zabbix.png)
+![](screenshots/cpu-script.png)
 
 ### Automatic Action
 
-![](screenshots/Création%20d'une%20action%20pour%20exécuter%20automatiquement%20le%20script%20de%20correction%20CPU.png)
+![](screenshots/cpu-action.png)
 
 ### CPU Alert
 
-![](screenshots/Déclenchement%20d'une%20alerte%20CPU%20lorsque%20l'utilisation%20dépasse%2090%20.png)
+![](screenshots/cpu-alert.png)
 
 ### Automatic Resolution
 
-![](screenshots/Exécution%20réussie%20de%20la%20remédiation%20automatique%20et%20résolution%20du%20problème%20CPU%20dans%20Zabbix.png)
-
+![](screenshots/cpu-resolution.png)
 ### Apache2 Service
 
 ![](screenshots/vérification%20apach.png)
