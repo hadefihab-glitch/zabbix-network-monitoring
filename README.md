@@ -189,6 +189,28 @@ Surveillance du service **Zabbix Server** pour vérifier son bon fonctionnement.
 
 ![](screenshots/Vérification%20zabbix%20.png)
 
+### Net-SNMP Installation on pfSense
+
+Installation du package **Net-SNMP** sur le pare-feu pfSense afin d'activer la supervision via le protocole SNMP.
+
+![](screenshots/pfsense-net-snmp-installation.png)
+
+---
+
+### SNMP Configuration on pfSense
+
+Configuration du service **SNMP** sur pfSense, incluant la communauté SNMP, le port 161 et l'interface LAN utilisée pour la supervision.
+
+![](screenshots/pfsense-snmp-configuration.png)
+
+---
+
+### pfSense Added to Zabbix via SNMP
+
+Le pare-feu **pfSense** est ajouté avec succès au serveur Zabbix et supervisé via **SNMP**, permettant de surveiller son état et ses performances en temps réel.
+
+![](screenshots/pfsense-added-to-zabbix-via-snmp.png)
+
 ---
 
 ### Zabbix Agent Service
@@ -196,3 +218,14 @@ Surveillance du service **Zabbix Server** pour vérifier son bon fonctionnement.
 Vérification que le service **Zabbix Agent** est actif et communique correctement avec le serveur Zabbix.
 
 ![](screenshots/vérification%20zabbix.agent.png)
+
+## Résultats obtenus
+
+À la fin de ce projet, l'ensemble des équipements est correctement supervisé depuis Zabbix :
+
+- Les clients Linux communiquent avec le serveur Zabbix via **Zabbix Agent**.
+- Le pare-feu **pfSense** est supervisé via **SNMP**.
+- Les ressources système (CPU, RAM et disque) sont surveillées en temps réel.
+- Les alertes sont générées automatiquement lors d'un dépassement de seuil.
+- Des actions automatiques peuvent être exécutées grâce à des scripts Bash.
+- Les tableaux de bord permettent de visualiser l'état global de l'infrastructure.
