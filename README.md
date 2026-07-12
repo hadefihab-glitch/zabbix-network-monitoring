@@ -48,100 +48,81 @@ The monitoring platform supervises CPU, memory, disk usage and automatically exe
 
 ## Apache2
 
-![](screenshots/10-service-apache2.png)
+![](screenshots/vérification apach.png)
 
 ---
 
 ## MariaDB
 
-![](screenshots/11-service-mariadb.png)
+![](screenshots/vérification mariadb.png)
 
 ---
 
 ## Zabbix Server
 
-![](screenshots/12-service-zabbix-server.png)
+![](screenshots/Vérification zabbix .png)
 
 ---
 
 ## Zabbix Agent
 
-![](screenshots/13-service-zabbix-agent.png)
+![](screenshots/vérification zabbix.agent.png)
 
 ---
 
 # Hosts Configuration
 
-Both monitored hosts are successfully connected to the Zabbix server.
-
-![](screenshots/01-hotes-rh-finance-connectes.png)
+![](screenshots/Connexion des clients RH et Finance au serveur Zabbix.png)
 
 ---
 
 # System Monitoring
 
-## FINANCE Host
+## FINANCE
 
-![](screenshots/08-supervision-finance.png)
+![](screenshots/Surveillance des ressources système du client FINANCE dans Zabbix.png)
 
 ---
 
-## RH Host
+## RH
 
-![](screenshots/09-supervision-rh.png)
+![](screenshots/Surveillance des ressources système du client RH dans Zabbix.png)
 
 ---
 
 # CPU Trigger
 
-A High severity trigger detects when CPU utilization exceeds 90%.
-
-```text
-last(/FINANCE/system.cpu.util)>90
-```
-
-![](screenshots/02-declencheur-cpu-90.png)
+![](screenshots/Création d'un déclencheur pour la surveillance du CPU.png)
 
 ---
 
 # Automatic Remediation Script
 
-The script is executed remotely by the Zabbix Agent.
-
-![](screenshots/03-script-correction-cpu.png)
+![](screenshots/Création d'un script de correction automatique du CPU dans Zabbix.png)
 
 ---
 
 # Automatic Action
 
-The trigger automatically launches the remediation script.
-
-![](screenshots/04-action-remediation-cpu.png)
+![](screenshots/Création d'une action pour exécuter automatiquement le script de correction CPU.png)
 
 ---
 
 # CPU Alert
 
-Zabbix detects CPU overload.
-
-![](screenshots/06-alerte-cpu-superieur-90.png)
+![](screenshots/Déclenchement d'une alerte CPU lorsque l'utilisation dépasse 90 %.png)
 
 ---
 
 # Automatic Resolution
 
-The remediation script successfully resolves the issue.
-
-![](screenshots/07-remediation-reussie.png)
+![](screenshots/Exécution réussie de la remédiation automatique et résolution du problème CPU dans Zabbix.png)
 
 ---
 
 # Dashboard
 
-Global monitoring dashboard.
-
-![](screenshots/05-dashboard-zabbix.png)
-
+![](screenshots/Dashboard ZABBIX.png)
 ---
 
 # Technologies
@@ -154,37 +135,3 @@ Global monitoring dashboard.
 - Bash
 - Oracle VirtualBox
 
----
-
-# Project Structure
-
-```
-zabbix-network-monitoring/
-│
-├── README.md
-│
-└── screenshots/
-    ├── 01-hotes-rh-finance-connectes.png
-    ├── 02-declencheur-cpu-90.png
-    ├── 03-script-correction-cpu.png
-    ├── 04-action-remediation-cpu.png
-    ├── 05-dashboard-zabbix.png
-    ├── 06-alerte-cpu-superieur-90.png
-    ├── 07-remediation-reussie.png
-    ├── 08-supervision-finance.png
-    ├── 09-supervision-rh.png
-    ├── 10-service-apache2.png
-    ├── 11-service-mariadb.png
-    ├── 12-service-zabbix-server.png
-    └── 13-service-zabbix-agent.png
-```
-
----
-
-# Author
-
-**Ihab Hadaf**
-
-Digital Infrastructure & Network Engineering Student
-
-Network • Cloud • Linux • Zabbix
